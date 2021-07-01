@@ -1,0 +1,39 @@
+{
+    "name": "tendersrl/version",
+    "description": "Automatically create git tag about your Laravel app version",
+    "keywords": [
+        "laravel",
+        "version",
+        "versioning"
+    ],
+    "homepage": "https://github.com/tendersrl/version",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrea Colzani",
+            "email": "a.colzani@ntit.it"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5|^8.0",
+        "pragmarx/version": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tender\\Version\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TenderSrl\\Version\\VersionServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": [
+            "@composer install",
+            "vendor/bin/phpunit"
+        ]
+    }
+}
