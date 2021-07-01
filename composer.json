@@ -20,10 +20,11 @@
     },
     "autoload": {
         "psr-4": {
-            "Tender\\Version\\": "src"
+            "TenderSrl\\Version\\": "src"
         }
     },
     "extra": {
+        "component": "package",
         "laravel": {
             "providers": [
                 "TenderSrl\\Version\\VersionServiceProvider"
